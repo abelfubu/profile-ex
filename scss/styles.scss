@@ -2,6 +2,15 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 400px auto;
+  font-family: 'open sans';
+}
+
+@media (max-width: 900px) {
+  body,
+  aside {
+    display: block;
+    padding: 32px;
+  }
 }
 
 aside {
@@ -9,5 +18,32 @@ aside {
   img {
     width: 100%;
     border-radius: 50%;
+  }
+}
+
+main {
+  header {
+    margin-top: 64px;
+    ul {
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      i {
+        color: orange;
+        transform: translateY(2px);
+        margin-right: 6px;
+      }
+      list-style: none;
+      padding: 16px;
+
+      &:first-child {
+        border-bottom: 2px orange solid;
+      }
+      &:hover {
+        border-bottom: 2px lightgrey solid;
+      }
+    }
   }
 }
