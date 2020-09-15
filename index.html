@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <aside>
@@ -31,10 +31,10 @@
     <main>
       <header>
         <ul>
-          <li><i class="fas fa-book-open"></i> Overview</li>
-          <li><i class="far fa-flag"></i> Repositories</li>
-          <li><i class="fas fa-tasks"></i> Projects</li>
-          <li><i class="fas fa-cube"></i> Packages</li>
+          <li id="overview"><i class="fas fa-book-open"></i> Overview</li>
+          <li id="repos"><i class="far fa-flag"></i> Repositories</li>
+          <li id="projects"><i class="fas fa-tasks"></i> Projects</li>
+          <li id="packages"><i class="fas fa-cube"></i> Packages</li>
         </ul>
       </header>
       <section id="content">
@@ -45,20 +45,53 @@
             ><button><i class="fas fa-pencil-alt"></i></button>
           </div>
         </div>
+        <div class="ov-content visible">
+          <h1>Hello there! 🤘</h1>
+          <p>Mi nombre es Abel de la Fuente y soy un intento de developer</p>
+          <ul>
+            <li>
+              💻 Me interesan sobretodo las tecnologías de programación basadas
+              en el lenguaje javascript
+            </li>
+            <li>
+              🚲Especialmente trabando y tropezandome actualmente con angular
+            </li>
+            <li>⏲En mis ratos libres me encanta jugar al ajedrez</li>
+            <li>☕ Nunca digo que no a una buena taza de café</li>
+          </ul>
+        </div>
+      </section>
 
+      <!-- repos content  -->
+      <section class="rep-content">
         <h1>Hello there! 🤘</h1>
         <p>Mi nombre es Abel de la Fuente y soy un intento de developer</p>
         <ul>
-          <li>
-            💻 Me interesan sobretodo las tecnologías de programación basadas en
-            el lenguaje javascript
-          </li>
-          <li>
-            🚲Especialmente trabando y tropezandome actualmente con angular
-          </li>
-          <li>⏲En mis ratos libres me encanta jugar al ajedrez</li>
-          <li>☕ Nunca digo que no a una buena taza de café</li>
+          <li>💻 REpo flipas que no veas</li>
+          <li>🚲 montando en bici</li>
+          <li>⏲ se va haciendo la hora de comer</li>
+          <li>☕ despues el postre</li>
         </ul>
+      </section>
+
+      <!-- projects content  -->
+      <section class="project-content">
+        <h1>Hello there! 🤘</h1>
+        <p>Mi nombre es Abel de la Fuente y soy un intento de developer</p>
+        <ul>
+          <li>💻 REpo flipas que no veas</li>
+          <li>🚲 montando en bici</li>
+          <li>⏲ se va haciendo la hora de comer</li>
+          <li>☕ despues el postre</li>
+        </ul>
+      </section>
+
+      <!-- packages content  -->
+      <section class="pack-content">
+        <div class="container">
+          <h1>Mi propia versión de los array methods</h1>
+          <script src="https://gist.github.com/abelfubu/623b68591b878ef292f33597efd74fce.js"></script>
+        </div>
       </section>
     </main>
   </body>
