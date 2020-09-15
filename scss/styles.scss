@@ -19,6 +19,17 @@ aside {
     width: 100%;
     border-radius: 50%;
   }
+
+  #details {
+    h1 {
+      margin-bottom: 0;
+      font-weight: bolder;
+    }
+    span {
+      color: grey;
+      font-weight: bold;
+    }
+  }
 }
 
 main {
