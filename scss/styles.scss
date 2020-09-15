@@ -95,4 +95,25 @@ main {
       margin: 9px 0;
     }
   }
+
+  .container {
+    margin: 32px 0;
+  }
+}
+
+.visible {
+  display: block !important;
+}
+
+.active {
+  header li {
+    border-bottom: 2px orange solid !important;
+  }
+}
+
+.ov-content,
+.rep-content,
+.project-content,
+.pack-content {
+  display: none;
 }
